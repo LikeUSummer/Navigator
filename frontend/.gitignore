@@ -1,0 +1,6 @@
+node_modules/
+dist/
+dist_electron/
+prebuilt/
+build/
+package-lock.json

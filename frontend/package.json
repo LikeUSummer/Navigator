@@ -1,0 +1,46 @@
+{
+  "name": "tug-master",
+  "version": "1.0.1",
+  "private": true,
+  "scripts": {
+    "dev": "vue-cli-service serve --open",
+    "dev:elec": "vue-cli-service electron:serve",
+    "build:core": "vue-cli-service build",
+    "build:elec:std": "del-cli -f \"../release/frontend/standard/*\" && vue-cli-service electron:build",
+    "build:elec:fast": "npm run build:core && cpx \"dist/**/*.*\" \"../release/frontend/fast/resources/app/dist\" -C",
+    "lint": "vue-cli-service lint"
+  },
+  "main": "background.js",
+  "dependencies": {
+    "chartist": "0.11.4",
+    "core-js": "^3.21.1",
+    "requestretry": "^7.0.2",
+    "vue": "2.6.11",
+    "vue-router": "3.1.6",
+    "vue-clickaway": "2.2.2",
+    "vue-github-buttons": "3.1.0",
+    "vue-material": "1.0.0-beta-15",
+    "vue-baidu-map": "^0.21.22"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "4.2.3",
+    "@vue/cli-plugin-eslint": "4.2.3",
+    "@vue/cli-plugin-router": "4.2.3",
+    "@vue/cli-service": "4.2.3",
+    "@vue/eslint-config-prettier": "6.0.0",
+    "babel-eslint": "10.1.0",
+    "cpx2": "^3.0.0",
+    "del-cli": "^3.0.1",
+    "electron": "^11.5.0",
+    "es6-promise": "4.2.8",
+    "eslint": "6.8.0",
+    "eslint-plugin-prettier": "3.1.2",
+    "eslint-plugin-vue": "6.2.2",
+    "prettier": "1.19.1",
+    "sass": "1.26.2",
+    "sass-loader": "8.0.2",
+    "url-loader": "^4.1.1",
+    "vue-cli-plugin-electron-builder": "^2.1.1",
+    "vue-template-compiler": "2.6.11"
+  }
+}
