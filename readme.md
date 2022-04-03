@@ -2,6 +2,7 @@
 
 ### 前端
 进入 frontend 目录：
+
 1、安装 node 依赖
 ```shell
 npm install
