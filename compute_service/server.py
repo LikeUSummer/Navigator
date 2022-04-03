@@ -1,18 +1,23 @@
 print("计算服务初始化...")
-import json
-import uuid
-import logging
-from flask import Flask, request, jsonify
-from flask_cors import CORS
-import numpy as np
-import scipy.integrate as si
-from ship import Ship
-import compute
+import sys
+sys.path.append('./')
 
+from flask import Flask, request, jsonify
 app = Flask(__name__)
+from flask_cors import CORS
 CORS(app, supports_credentials = True) # 允许跨域请求
+
+import logging
 log = logging.getLogger('werkzeug')
 log.setLevel(logging.ERROR) # 设置 Flask 的 Log 打印级别，减少回显信息
+
+import json
+import uuid
+import numpy as np
+import scipy.integrate as si
+
+from ship import Ship
+import compute
 
 cache = {} # 全局计算实例缓存
 
