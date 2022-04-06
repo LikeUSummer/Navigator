@@ -1,9 +1,9 @@
 ## 构建
 
 ### 前端
-进入 frontend 目录：
+进入 frontend 目录。
 
-1、安装 node 依赖
+1、安装 node 依赖，执行以下命令：
 ```shell
 npm install
 ```
@@ -15,7 +15,10 @@ npm install
 构建完成后，相关二进制会输出到项目根目录下的 release/frontend/standard/ 中。
 
 ### 计算服务
-进入 compute_service 目录，执行 `build.ps1`脚本。
+进入 compute_service 目录。
+
+执行 `build.ps1`脚本进行编译构建。
+
 构建完成后，相关二进制会输出到项目根目录下的 release/compute_service/ 中。
 
 ## 运行
