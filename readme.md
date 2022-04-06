@@ -7,7 +7,11 @@
 ```shell
 npm install
 ```
-2、执行 `build.ps1`脚本
+
+2、执行 `init.ps1`脚本初始化其他开发依赖。
+
+3、执行 `build.ps1`脚本进行编译构建。
+
 构建完成后，相关二进制会输出到项目根目录下的 release/frontend/standard/ 中。
 
 ### 计算服务
