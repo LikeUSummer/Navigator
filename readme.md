@@ -8,16 +8,16 @@
 npm install
 ```
 
-2、执行 `init.ps1`脚本初始化其他开发依赖。
+2、运行 `init.ps1`脚本初始化其他开发依赖。
 
-3、执行 `build.ps1`脚本进行编译构建。
+3、运行 `build.ps1`脚本进行编译构建。
 
 构建完成后，相关二进制会输出到项目根目录下的 release/frontend/standard/ 中。
 
 ### 计算服务
 进入 compute_service 目录。
 
-执行 `build.ps1`脚本进行编译构建。
+运行 `build.ps1`脚本进行编译构建。
 
 构建完成后，相关二进制会输出到项目根目录下的 release/compute_service/ 中。
 
